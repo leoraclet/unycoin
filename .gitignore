@@ -1,0 +1,10 @@
+# Remove python cahce files
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Remove virtual environement
+/venv/
+
+# Remove Pycharm config folder
+.idea/
