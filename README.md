@@ -34,8 +34,6 @@ was first introduced by Satoshi Nakamoto's whitepaper :
 - This implementation is made for educational purposes only.
 Do **NOT** use this program in a real world scenario as it is considered
 insecure in regard of today's security standards.
-<br />
-<br />
 - **DON'T RULE YOUR OWN CRYPTO** : 
 The main reason I implemented this cryptographic primitives from scratch
 is to understand how they are made and how they work. If you want secure
