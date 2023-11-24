@@ -8,3 +8,6 @@ __pycache__/
 
 # Remove Pycharm config folder
 .idea/
+
+# Remove vscode backup files
+.history/
