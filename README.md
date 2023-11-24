@@ -1,4 +1,4 @@
-<style>body {text-align: justify}</style>
+<div align="justify">
 
 # Unycoin
 
@@ -107,3 +107,5 @@ it yourself, go see the
 ## Credits
 
 * [**Léo Raclet**](https://github.com/leoraclet) : Creator of the project.
+
+</div>
