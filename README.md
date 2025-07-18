@@ -30,7 +30,7 @@ This project is a pure Python implementation of a cryptocurrency inspired by the
 introduced in Satoshi Nakamoto's whitepaper: [Bitcoin: A Peer-to-Peer Electronic Cash
 System](https://bitcoin.org/bitcoin.pdf).
 
-> [!IMPORTANT] Important Notes
+> [!IMPORTANT]
 >
 > ### Security
 >
