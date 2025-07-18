@@ -1,8 +1,7 @@
 # Copyright (c) 2022 Neutronys
 
-# The software is distributed under the MIT software license
-# See the accompanying file LICENSE in the main directory of
-# the project for more details.
+# The software is distributed under the MIT software license See the accompanying file LICENSE in
+# the main directory of the project for more details.
 
 
 """
@@ -13,7 +12,7 @@ This file implements some basic utility functions.
 
 
 from constants import (
-    MAX_TARGET, 
+    MAX_TARGET,
     THREE_DAYS,
 )
 
@@ -96,8 +95,7 @@ def target2bits(target):
     b = target.to_bytes(32, 'big')
     b = b.lstrip(b'\0')
 
-    # e: exponent
-    # c: coefficient
+    # e: exponent c: coefficient
 
     if b[0] > 0x7f:
         e, c = len(b) + 1, b'\0' + b[:2]
@@ -147,8 +145,7 @@ def bytes2bits(b):
 def new_bits(bits, dt):
 
     """
-    Calculate new target from last bits and
-    time differential
+    Calculate new target from last bits and time differential
     """
 
     # Check time differential boundaries

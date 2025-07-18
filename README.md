@@ -1,78 +1,80 @@
-# Unycoin
+<div align="center"><img src="assets/misc/unycoin.png" style="width: 300px"></div>
+<br>
+<h1 align="center">Unycoin</h1>
 
-![License](https://img.shields.io/github/license/leoraclet/unycoin)
+<div align="center">
+<br>
 
-This project aims to be a pure python implementation of a cryptocurrency similar to Bitcoin as it
-was first introduced by Satoshi Nakamoto's whitepaper :
-[Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf).
+![license](https://img.shields.io/github/license/leoraclet/unycoin)
+![language](https://img.shields.io/github/languages/top/leoraclet/unycoin)
+![lastcommit](https://img.shields.io/github/last-commit/leoraclet/unycoin)
 
-![](shared/misc/bitcoin-ethereum.jpeg)
+</div>
 
-## Summary
+## Table of Contents
+- [Table of Contents](#table-of-contents)
+- [📖 About](#-about)
+- [✨ Features](#-features)
+- [📦 Structure](#-structure)
+- [🔌 Modules](#-modules)
+  - [Cryptography](#cryptography)
+- [📚 Libraries](#-libraries)
+- [🚀 Install \& Run](#-install--run)
+- [❤️ Thanks](#️-thanks)
+- [📜 License](#-license)
 
-* **[Disclaimer](#disclaimer)**
-  * **[Security](#security)**
-  * **[Efficiency](#efficiency)**
-* **[Description](#description)**
-  * **[What about this project ?](#what-about-this-project)**
-  * **[How it works](#how-it-works)**
-  * **[Why python ?](#why-python-)**
-* **[Structure](#structure)**
-  * **[Cryptography](#cryptography)**
-  * **[Database](#database)**
-  * **[Ledger](#ledger)**
-  * **[Network](#network)**
-  * **[Virtual Machine](#virtual-machine)**
-  * **[Wallet](#wallet)**
-* **[Contribute](#contribute)**
-* **[Releases](#releases)**
-* **[License](#license)**
-* **[Credits](#credits)**
 
-## Disclaimer
+## 📖 About
 
-- This implementation is made for educational purposes only.
-Do **NOT** use this program in a real world scenario as it is considered
-insecure in regard of today's security standards.
-- **DON'T RULE YOUR OWN CRYPTO** : 
-The main reason I implemented this cryptographic primitives from scratch
-is to understand how they are made and how they work. If you want secure
-cryptographic protocols, you should use already existing libraries that
-have been reviewed for years by many experts and the community.
+This project is a pure Python implementation of a cryptocurrency inspired by the original concept
+introduced in Satoshi Nakamoto's whitepaper: [Bitcoin: A Peer-to-Peer Electronic Cash
+System](https://bitcoin.org/bitcoin.pdf).
 
-### Security
+> [!IMPORTANT] Important Notes
+>
+> ### Security
+>
+> All cryptographic protocols and functions in this project are implemented according to their
+> official specifications. The **ECDSA** algorithm is secured against side-channel attacks by using
+> the Montgomery Ladder technique for point multiplication on elliptic curves.
+>
+> ### Efficiency
+>
+> Since this project is written entirely in Python, the cryptographic protocols are way less
+> efficient compared to implementations in lower-level languages like C++. However, for general
+> tasks such as networking, Python provides sufficient performance.
 
-All cryptographic protocols and functions implemented in this
-project follows all rules specified in their description.
-**ECDSA** is protected against side-channel attack by using
-the Montgomery Ladder as the algorithm for point multiplications
-over Elliptic Curves.
 
-### Efficiency
+## ✨ Features
 
-As this software is written in pure python, every cryptographic protocol
-implemented here is rather inefficient compared to the same one in another language like C++.
-However, when it comes to more usual tasks like networks, python is good enough.
+- **Project**
 
-## Description
+    - 🔄 **Reproducible**: Built with **uv**, this configuration can be effortlessly reproduced on
+    other machines, ensuring a consistent setup.
 
-### What about this project
-### How it works
-### Why python ?
+    - 📖 **Documented**: Most of the parts of my source files are commented and documented with
+    links and explanations if necessary
 
-I choosed python as the programming language for this project for the two following reasons :
+- **Program**
 
-- **Simplicity** ~ Python is a programming language that is easy to use and more importantly, easy to read and to understand.
 
-- **Originality** ~ Most of today's cyptocurrencies are built in C/C++ for better performances and enhanced security.
+## 📦 Structure
 
-## Structure
+**Directories**
+
+  - [**`assets`**](./ansible/) - Resources
+  - [**`src`**](./server/) - Source files and modules
+  - [**`tests`**](./assets/) - Test files and modules
+
+
+## 🔌 Modules
 
 ### Cryptography
 
-This module implements all cryptographic protocols and primitives that are necessary
-to ensure cryptocurrency's security and integrity. All protocols were implemented from
-scratch in pure python based on their official description. 
+This module implements all cryptographic protocols and primitives that are necessary to ensure
+cryptocurrency's security and integrity. All protocols were implemented from scratch in pure python
+based on their official description.
+
 Here is the implemented ones :
 
 - **Base 58**
@@ -85,24 +87,44 @@ Here is the implemented ones :
 - **Ripemd160**
 - **Sha256**
 
-### Database
-This module aims to store the blockchain and all according data into a structured database using Sqlite3.
-### Ledger
-### Network
-### Wallet
 
-## License
+## 📚 Libraries
 
-This project is released under the 
-[**MIT**](https://mit-license.org/)
-license.
+> [!NOTE]
+>
+> None, everything was re-implemented from Scratch for learning purposes
 
-## Releases
+## 🚀 Install & Run
 
-To run the program without editing the source code or building
-it yourself, go see the 
-[**Releases**](https://github.com/leoraclet/cpp_skeleton/releases).
+First, ensure you have the [**`uv`**](https://docs.astral.sh/uv/) python package manager installed.
 
-## Credits
+If so, then clone the repo
 
-* [**Léo Raclet**](https://github.com/leoraclet) : Creator of the project.
+```bash
+git clone https://github.com/leoraclet/unycoin
+cd unycoin
+```
+
+Create a virtual environment for Python if you want to add package in the future
+
+```bash
+uv venv
+```
+
+## ❤️ Thanks
+
+Resources that guided me :
+
+- [The **REPO**](https://github.com/jimmysong/programmingbitcoin)
+- [Bitcoin Whitepaper](https://bitcoin.org/bitcoin.pdf)
+- [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page)
+- [This Incredible Blog Post](http://karpathy.github.io/2021/06/21/blockchain/)
+
+*and many more hours of research ton internet to finally understand how Bitcoin works (the only **TRUE**
+cyrptocurrency btw)
+
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
