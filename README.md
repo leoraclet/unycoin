@@ -8,6 +8,11 @@
 ![license](https://img.shields.io/github/license/leoraclet/unycoin)
 ![language](https://img.shields.io/github/languages/top/leoraclet/unycoin)
 ![lastcommit](https://img.shields.io/github/last-commit/leoraclet/unycoin)
+<br>
+![Language](https://img.shields.io/badge/Language-Python-1d50de)
+![Libraries](https://img.shields.io/badge/Framework-None-fa8925)
+![Size](https://img.shields.io/badge/Size-1.6Mo-f12222)
+![Open Source](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)
 
 </div>
 
@@ -26,6 +31,11 @@
 
 ## 📖 About
 
+> [!WARNING]
+>
+> ⚠️ This project was started even before I entered high school because I wanted to understand how
+> **Bitcoin** worked. I almost didn't touched this project since then.
+>
 This project is a pure Python implementation of a cryptocurrency inspired by the original concept
 introduced in Satoshi Nakamoto's whitepaper: [Bitcoin: A Peer-to-Peer Electronic Cash
 System](https://bitcoin.org/bitcoin.pdf).
